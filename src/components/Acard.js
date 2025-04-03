@@ -21,7 +21,7 @@ const Acard = ({cardStyle,price , selected , setSelected , total,setTotal,handle
 
 
         
-        <img src={`/images/${imagePath}`} style={{maxHeight:"200px"}} alt="" />
+        <img src={`${process.env.PUBLIC_URL}/images/${imagePath}`} style={{maxHeight:"200px"}} alt="" />
         <hr/>
         <h4>{name}</h4>
         <p>Item Price $&nbsp;{price}</p>
