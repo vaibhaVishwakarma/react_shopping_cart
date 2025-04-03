@@ -1,0 +1,15 @@
+button{
+    background:rgb(180,180,230) ;
+    transition: background 0.3s ease-in-out , transform 0.3s ease-in-out;
+}
+button:hover{
+    background: rgb(240,200,210);
+    transform: scale(1.1);
+}
+img{
+    transition: transform 0.3s;
+}
+img:hover{
+    transform: scale(1.04);
+
+}

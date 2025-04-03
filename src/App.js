@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React , {useState,useEffect} from 'react'
+import Assembler from './components/Assembler'
+import details from "./details"
 
-function App() {
+const App = () => {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+<>
+  <div >
+
+      <h1 style={{textAlign:"center",fontFamily:"cursive",color:"rgb(150,50,150)",fontStyle:"italic"}}>Shopping Cart</h1>
+      {
+        details.map((elem,idx)=>{
+          return <Assembler {...elem}/>
+        })}
+      
     </div>
-  );
+</>
+
+  )
 }
 
-export default App;
+export default App
